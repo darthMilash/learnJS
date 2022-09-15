@@ -109,3 +109,23 @@ if (4 == 4) {
 } else {
     console.log('Err');
 }
+
+const num = 50;
+
+
+
+(num === 50) ? console.log('ok') : console.log('error');
+
+switch (num) {
+    case 49:
+        console.log('error');
+        break;
+    case 100:
+        console.log('error');
+        break;
+    default:
+        console.log('not today');
+        break;
+}
+
+
