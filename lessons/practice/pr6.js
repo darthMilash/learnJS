@@ -25,6 +25,8 @@ function sayHello(name) {
 return `Привет, ${name}!`;
 }
 
+
+
 // Место для второй задачи
 function returnNeighboringNumbers(number) {
     let arr = [];
