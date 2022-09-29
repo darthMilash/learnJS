@@ -2,7 +2,13 @@
 
 'use strict';
 
-const arr = [1, 2, 3, 6, 8];
+const arr = [11, 2, 33, 16, 8];
+arr.sort(compareNum);
+console.log(arr);
+
+function compareNum(a, b) {
+    return a - b;
+}
 
 
 // arr[99] = 0;
@@ -27,8 +33,8 @@ const arr = [1, 2, 3, 6, 8];
 // });
 
 //split
-const str = prompt('', '');
-const products = str.split(', ');
-products.sort();
+// const str = prompt('', '');
+// const products = str.split(', ');
+// products.sort();
 // console.log(products);
 // console.log(products.join('; '));
