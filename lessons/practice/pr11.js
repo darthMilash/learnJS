@@ -9,16 +9,17 @@
 const family = ['Peter', 'Ann', 'Alex', 'Linda'];
 
 function showFamily(arr) {
-    let str = 'Семья состоит из: ';
-    if (arr !== []) {
+    if (arr.length !== 0) {
+        let str = 'Семья состоит из: ';
         for (let i = 0; i < arr.length; i++) {
             if (i == arr.length-1) {
                 str += `${arr[i]}`;
             }
-        else {str += `${arr[i]}`;}
+        else {str += `${arr[i]} `;}
         }
         return str;
     }
+    else return 'Семья пуста';
 }
 
 console.log(showFamily(family));
@@ -26,6 +27,11 @@ console.log(showFamily(family));
 const favoriteCities = ['liSBon', 'ROME', 'miLan', 'Dublin'];
 
 function standardizeStrings(arr) {
-    
+    for (let i in arr) {
+        
+        console.log(arr[i].toLowerCase());
+    }
 }
+
+standardizeStrings(favoriteCities);
 
