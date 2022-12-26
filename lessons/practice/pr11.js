@@ -35,3 +35,27 @@ function standardizeStrings(arr) {
 
 standardizeStrings(favoriteCities);
 
+//2 sposob
+
+function showFamily2(arr) {
+    let str = '';
+
+    arr.length === 0 ? str = 'Семья пуста' : str = "Семья состоит из: ";
+
+    arr.forEach(member => {
+        str+= `${member} `;
+    });
+
+    return str;
+}
+
+console.log(showFamily2(family));
+
+function standardizeStrings2(arr) {
+    arr.forEach(city => {
+        console.log(city.toLowerCase());
+    });
+
+}
+
+standardizeStrings2(favoriteCities);

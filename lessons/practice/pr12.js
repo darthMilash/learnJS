@@ -17,16 +17,22 @@ function reverse(str) {
         let arrReverse = arr.reverse();
         let str2 = '';
 
-        for (let i in arrReverse) {
-            str2 += arrReverse[i];
-        }
+        // for (let i in arrReverse) {
+        //     str2 += arrReverse[i];
+        // }
 
-        return str2;
+        arrReverse.forEach(words => {
+            str2 += words;
+        });
+
+        return console.log(str2);
         
         
     }
     else return 'Ошибка';
 }
+
+reverse(someString);
 
 
 // 4) Представьте такую реальную ситуацию. У вас есть банкомат, который выдает деньги из двух разных банков в разных валютах.
@@ -49,8 +55,8 @@ function reverse(str) {
 // - Данные для первого аргумента должны приходить сразу из двух банков, причем сначала baseCurrencies, 
 // потом additionalCurrencies по порядку
 
-const baseCurrencies = [];
-const additionalCurrencies = [];
+const baseCurrencies = ['USD', 'EUR'];
+const additionalCurrencies = ['UAH', 'RUB', 'CNY'];
 
 
 function availableCurr(arr, missingCurr) {
@@ -69,5 +75,6 @@ function availableCurr(arr, missingCurr) {
         return str;
     }
 }
+
 
 console.log(availableCurr([...baseCurrencies,...additionalCurrencies], 'RUB'));
